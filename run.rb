@@ -12,4 +12,6 @@ if %x[ps -ef | grep "xinit" | grep -v grep].empty?
   system "xinit -- `which Xvfb` #{ENV['DISPLAY']} -screen 0 1024x768x24 -auth #{auth_file} 2>&1 > xinit.log &"
 end
 
-visit 'http://google.com/'
+visit "http://google.com/"
+
+system "import -window root screen.png"
