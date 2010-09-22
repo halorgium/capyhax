@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
+require 'capybara'
 require 'capybara/dsl'
 Capybara.default_driver = :selenium
 
