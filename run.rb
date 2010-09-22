@@ -20,5 +20,10 @@ visit "http://google.com/"
 
 sleep 10
 
-system "lsw"
-system "import -window root screen.png"
+windows = `lsw`.split("\n")
+
+window = windows.find do |w|
+  w =~ /Google/
+end
+
+system "import -window '#{window}' screen.png"
