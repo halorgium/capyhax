@@ -17,6 +17,8 @@ if %x[ps -ef | grep "xinit" | grep -v grep].empty?
 end
 
 visit "http://google.com/"
+fill_in "q", :with => "you are the fail"
+click_button "Google Search"
 
 sleep 10
 
