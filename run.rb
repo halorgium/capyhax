@@ -18,4 +18,7 @@ end
 
 visit "http://google.com/"
 
+sleep 10
+
+system "lsw"
 system "import -window root screen.png"
