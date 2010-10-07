@@ -3,4 +3,6 @@
 echo "Hello!!"
 date
 
+sleep 50
+
 exit 0
