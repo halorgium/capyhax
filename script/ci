@@ -3,4 +3,6 @@
 echo "Hello!!"
 date
 
+sleep $(($RANDOM / 3000))
+
 exit 0
